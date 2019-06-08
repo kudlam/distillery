@@ -7,7 +7,7 @@ unset CDPATH
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd -P)"
 RELEASE_ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 RELEASES_DIR="${RELEASE_ROOT_DIR}/releases"
-RELEASE_MUTABLE_DIR="${RELEASE_MUTABLE_DIR:-"${RELEASE_ROOT_DIR}/var"}"
+RELEASE_MUTABLE_DIR="${RELEASE_MUTABLE_DIR:-"${RELEASE_ROOT_DIR}/releases"}"
 START_ERL_DATA="${RELEASE_MUTABLE_DIR}/start_erl.data"
 REL_NAME="${REL_NAME:-<%= release_name %>}"
 if [ ! -f "${START_ERL_DATA}" ]; then
